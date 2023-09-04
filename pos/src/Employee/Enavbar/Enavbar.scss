@@ -1,0 +1,32 @@
+nav {
+  position: relative;
+  width: 100%;
+  .divnav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 20px #e2e3e3;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 50px;
+    .brand {
+      padding-left: 50px;
+    }
+    .navbtndiv {
+      position: relative;
+      display: flex;
+      .btnstyle {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: #727cf9;
+        border-radius: 4px;
+        margin: 0 5px;
+      }
+      .inputstyle {
+        width: 200px;
+      }
+    }
+  }
+}

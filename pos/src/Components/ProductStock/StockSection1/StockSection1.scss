@@ -1,0 +1,213 @@
+@use "sass:math";
+.StockSection1 {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: start;
+  width: 99%;
+  .StockSection1all {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .StockSection1allleft {
+      position: relative;
+      height: 83vh;
+      width: 64%;
+      box-shadow: 0 0 20px #d8d9d9;
+      padding: 10px;
+      border-radius: 5px;
+      .StockSection1allleftall {
+        padding: 0 0 5px;
+      }
+    }
+    .StockSection1allright {
+      position: relative;
+      height: 83vh;
+      width: 35%;
+      box-shadow: 0 0 20px #d8d9d9;
+      padding: 10px;
+      border-radius: 5px;
+
+      .StockSection1allrightall {
+        .StockSection1allrightalllist {
+          position: relative;
+          width: 100%;
+          .inputmy {
+            position: relative;
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            height: 6vh;
+            padding: 5px 20px;
+            right: 0;
+            select {
+              width: 50%;
+              float: right;
+            }
+          }
+          .progress1 {
+            position: relative;
+            width: 98%;
+            height: 430px;
+            padding: 10px 0;
+            overflow: auto;
+            .progress_item1 {
+              width: 80%;
+              height: 100px;
+              padding: 0.5rem;
+              //box-shadow: 0 0 20px #e4e5e5;
+              border-radius: 5px;
+              margin: 10px auto;
+              .progress_title1 {
+                color: rgb(41, 61, 102);
+                padding: 0.5rem 0;
+              }
+              .progress_bar1 {
+                position: relative;
+                width: 100%;
+                margin-top: 30px;
+                height: 5px;
+                border-radius: 2rem;
+                background: rgb(222, 222, 222);
+                .bar1 {
+                  // background: linear-gradient(
+                  //   50deg,
+                  //   #ac0303,
+                  //   rgb(241, 12, 12),
+                  //   #ff3216
+                  // );
+                  border-radius: 5px;
+                  // background: linear-gradient(
+                  //   50deg,
+                  //   #da0b0b,
+                  //   rgb(230, 69, 6),
+                  //   #a5dd4b
+                  // );
+                  /* background: linear-gradient(90deg, #5b4dda, #6546ee, #575afc); */
+                  position: absolute;
+                  transition: width 1.5s cubic-bezier(0.1, 0.42, 0.85, 1);
+                  width: 0%;
+                  height: 100%;
+                  left: 0;
+                }
+                .bar1::after {
+                  content: attr(data-text);
+                  position: absolute;
+                  right: -0.4rem;
+                  top: -2.4rem;
+                  width: 2rem;
+                  height: 1.8rem;
+                  //background: #db4747;
+                  font-size: 12px;
+                  line-height: 1.8rem;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 0.2rem;
+                  /* border-bottom-left-radius: 10px;
+                            border-top-right-radius: 10px; */
+                  animation: text 0.6s ease-in-out;
+                  font-weight: bold;
+                }
+
+                .bar1::before {
+                  content: "";
+                  position: absolute;
+                  right: 0.1rem;
+                  top: -0.9rem;
+                  border-left: 10px solid transparent;
+                  /* border-right: 10px solid transparent; */
+                  border-right: 0px solid transparent;
+                  border-bottom: 10px solid transparent;
+                  // border-top: 10px solid #cc1d1d;
+                  animation: text 0.6s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bar1.background40 {
+  background: linear-gradient(50deg, #ac0303, rgb(255, 167, 3), #4fec06);
+}
+.bar1.background40::after {
+  background: #4fec06;
+}
+.bar1.background40::before {
+  border-top: 10px solid #4fec06;
+}
+
+.bar1.background30 {
+  background: linear-gradient(50deg, #ac0303, rgb(247, 150, 4), #9fec10);
+}
+.bar1.background30::after {
+  background: #9fec10;
+}
+.bar1.background30::before {
+  border-top: 10px solid #9fec10;
+}
+
+.bar1.background20 {
+  background: linear-gradient(50deg, #ac0303, rgb(238, 144, 3), #d6ec10);
+}
+.bar1.background20::after {
+  background: #d6ec10;
+}
+.bar1.background20::before {
+  border-top: 10px solid #d6ec10;
+}
+
+.bar1.background15 {
+  background: linear-gradient(50deg, #ac0303, rgb(224, 138, 8), #fcc40f);
+}
+.bar1.background15::after {
+  background: #fcc40f;
+}
+.bar1.background15::before {
+  border-top: 10px solid #fcc40f;
+}
+
+.bar1.background10 {
+  background: linear-gradient(50deg, #ac0303, rgb(224, 69, 8), #f78400);
+}
+.bar1.background10::after {
+  background: #f78400;
+}
+.bar1.background10::before {
+  border-top: 10px solid #f78400;
+}
+
+.bar1.background5 {
+  background: linear-gradient(50deg, #ac0303, rgb(224, 113, 8), #e77b00);
+}
+.bar1.background5::after {
+  background: #e77b00;
+}
+.bar1.background5::before {
+  border-top: 10px solid #e77b00;
+}
+
+.bar1.background1 {
+  background: linear-gradient(50deg, #ac0303, rgb(214, 33, 33), #ff3216);
+}
+.bar1.background1::after {
+  background: #cc0808;
+}
+.bar1.background1::before {
+  border-top: 10px solid #cc1d1d;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

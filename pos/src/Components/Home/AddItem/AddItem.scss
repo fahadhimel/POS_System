@@ -1,0 +1,26 @@
+.Additem {
+  position: relative;
+  width: 100%;
+  color: aqua;
+  .AdditemAll {
+    .AdditemAllBtn {
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        //grid-template-rows: 65px 45px 40px;
+        //grid-gap: 7px;
+        //align-content: end;
+      .mybtn {
+        margin: 5px;
+        //background: linear-gradient(50deg, #6b828f, rgb(84, 192, 188), #4bddca);
+        background: linear-gradient(20deg, #466475, rgb(88, 199, 195), #15e4c1);
+        border: none;
+        transition: .5s;
+      }
+      .mybtn:hover{
+        //background: linear-gradient(200deg, #466475, rgb(88, 199, 195), #15e4c1);
+        filter: brightness(80%);
+        transform: scale(1.05);
+      }
+    }
+  }
+}

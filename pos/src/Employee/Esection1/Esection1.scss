@@ -1,0 +1,109 @@
+.eall {
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow: auto;
+  .eitem {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    .card {
+      margin: 10px 20px;
+      width: 400px;
+      height: auto;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      .image img {
+        //display: inline;
+        width: 100px;
+        height: auto;
+        //overflow: hidden;
+        //filter: brightness(80%);
+        transition: 0.3s;
+      }
+      .stats {
+        background: #edf0f3 !important;
+        //background: #f2f5f8 !important;
+        color: #1b2fe4 !important;
+        height: 5px;
+      }
+    }
+  }
+
+  .card:hover .image img {
+    width: 100px;
+    transform: scale(1.02);
+  }
+  .card:hover {
+    background: #f7f1f1;
+  }
+  .dark_bg {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #0a01013a;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .edetails {
+    position: fixed;
+    height: 99vh;
+    width: 50vw;
+    background: #fff;
+    top: 0;
+    right: 0;
+    margin: 3px;
+    border-radius: 4px;
+    z-index: 1000;
+    transform: translateX(110%);
+    transition: all 0.3s ease-in-out;
+    .eheader {
+      background: #e4e1e1;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      .eheaderbtn {
+        .eheadericon {
+          width: 30px;
+          height: 30px;
+          color: #fbfbfc;
+        }
+      }
+    }
+    .edetailsitemdiv {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 15px;
+      //align-content: end;
+
+      .div1 {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        .div1img {
+          border-top-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+      .div2 {
+        padding: 10px;
+        padding-bottom: 0;
+        border-radius: 10px;
+      }
+      .div3 {
+        padding: 10px;
+        padding-bottom: 0;
+        border-radius: 10px;
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+  //}
+  .eshow {
+    transform: translateX(0%);
+  }
+}

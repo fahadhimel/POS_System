@@ -1,0 +1,35 @@
+.Dashbordsection2 {
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  .Dashbordsection2all {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .Dashbordsection2left {
+      position: relative;
+      //height: 63vh;
+      width: 90%;
+      box-shadow: 0 0 20px #d8d9d9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .Dashbordsection2right {
+      position: relative;
+      //max-height: 63vh;
+      width: 50%;
+      box-shadow: 0 0 20px #d8d9d9;
+      padding: 10px;
+      margin: 0 10px;
+      border-radius: 5px;
+      .Dashbordsection2rightall {
+        padding: 0 0 20px;
+        h2{
+            padding: 30px 0;
+        }
+      }
+    }
+  }
+}
